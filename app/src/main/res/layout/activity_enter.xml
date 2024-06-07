@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDEB5">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="157dp"
+        android:layout_height="52dp"
+        android:text="カテゴリ"
+        android:textColor="#070707"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="86dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="189dp">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="121dp"
+            android:layout_height="52dp"
+            android:text="食費"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="光熱費・水道代"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="112dp"
+            android:layout_height="43dp"
+            android:text="家賃"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交通費"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            tools:text="娯楽費" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="洋服"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="飲み物"
+            android:textSize="34sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="73dp"
+        android:layout_height="52dp"
+        android:text="金額"
+        android:textColor="#050505"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="797dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="461dp"
+        android:layout_height="61dp"
+        android:hint="ここに金額を入力して下さい"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="866dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
