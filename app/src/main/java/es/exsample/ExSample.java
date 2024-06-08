@@ -56,9 +56,11 @@ public class ExSample extends AppCompatActivity {
         buttonViewPastRecords.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ExSample.this, "過去の記録を表示します", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(ExSample.this, ResultActivity.class);
+                startActivity(intent);
             }
         });
+
     }
 
     private void launchCamera() {

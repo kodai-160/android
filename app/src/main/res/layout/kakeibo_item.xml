@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center_horizontal">  <!-- ここでLinearLayout内の要素を水平中央に配置 -->
 
     <TextView
         android:id="@+id/categoryTextView"
@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:text="Category"
         android:textSize="18sp"
-        android:padding="4dp"/>
+        android:padding="4dp"
+        android:layout_gravity="center_horizontal"/>  <!-- ここでTextViewを水平中央に配置 -->
 
     <TextView
         android:id="@+id/amountTextView"
@@ -19,5 +20,6 @@
         android:layout_height="wrap_content"
         android:text="Amount"
         android:textSize="18sp"
-        android:padding="4dp"/>
+        android:padding="4dp"
+        android:layout_gravity="center_horizontal"/>  <!-- 同じくTextViewを水平中央に配置 -->
 </LinearLayout>

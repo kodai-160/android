@@ -1,5 +1,7 @@
 package es.exsample;
 
+import java.util.Date;
+
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
@@ -8,6 +10,7 @@ public class Kakeibo extends RealmObject {
     private long id;  // トランザクションの一意識別子
     private String category;  // カテゴリ名を文字列で保存
     private int amount;  // 金額
+    private Date date;
     private long timestamp;  // タイムスタンプ
 
     // カテゴリ名を取得するゲッター
