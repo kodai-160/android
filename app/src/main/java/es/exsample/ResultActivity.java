@@ -63,8 +63,11 @@ public class ResultActivity extends Activity {
             Log.d("ResultActivity", "Retrieving item: Category = " + kakeibo.getCategory() + ", Amount = " + kakeibo.getAmount());
             categories.add(kakeibo.getCategory());
             amounts.add(kakeibo.getAmount());
-            items.add(new KakeiboItem(kakeibo.getCategory(), kakeibo.getAmount()));
+            KakeiboItem newItem = new KakeiboItem(kakeibo.getCategory(), kakeibo.getAmount());
+            items.add(newItem);
+            Log.d("ResultActivity", "Item added: " + newItem.toString());  // newItem.toString()が有効なオーバーライドをしている場合
         }
+
 
         // アダプター設定を一度だけ行う
         KakeiboAdapter adapter = new KakeiboAdapter(items);
@@ -72,7 +75,6 @@ public class ResultActivity extends Activity {
 
         // categories と amounts リストを別途使用できます
     }
-
 
     @Override
     protected void onDestroy() {

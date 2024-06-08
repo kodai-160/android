@@ -4,12 +4,9 @@ public class KakeiboItem {
     private String category;
     private int amount;
 
-    public KakeiboItem(int category, int amount) {
-        this.category = String.valueOf(category);
+    public KakeiboItem(String category, int amount) {
+        this.category = category;
         this.amount = amount;
-    }
-
-    public KakeiboItem(String category, Object amout) {
     }
 
     public String getCategory() {
@@ -18,5 +15,10 @@ public class KakeiboItem {
 
     public int getAmount() {
         return amount;
+    }
+
+    @Override
+    public String toString() {
+        return "KakeiboItem{category='" + category + "', amount=" + amount + '}';
     }
 }
